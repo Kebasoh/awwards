@@ -17,3 +17,7 @@
 - POSTGRES DATABASE
 - BOOTSTRAP AND CSS
 - HTML MARKDOWN
+
+## BDD 
+
+- First when you 
