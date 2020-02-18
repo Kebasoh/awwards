@@ -1,4 +1,4 @@
-{%extends "base.html"%}
+{% extends "base.html" %}
 
 
 {% load static %}
@@ -53,7 +53,7 @@
       <div class="modal-body mx-3">
         
 
-        <form action="{%url 'index'%}" method="POST" enctype="multipart/form-data">
+        <form action="{% url 'index' %}" method="POST" enctype="multipart/form-data">
             {%csrf_token%}
             {{rate.as_p}}
             <div class="modal-footer d-flex justify-content-center">
