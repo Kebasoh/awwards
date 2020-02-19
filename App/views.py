@@ -27,6 +27,9 @@ def index(request):
     else:
         form=ProjectForm()
         rate=ReviewForm()
+    def form_valid(self,form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
     return render(request,"index.html",{"posts":posts,"current_user": current_user, "form":form,"rate":rate})
 
 

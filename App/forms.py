@@ -8,7 +8,7 @@ class ProfileForm(forms.ModelForm):
 class ProjectForm(forms.ModelForm):
     class Meta:
         model = Project
-        fields=['author','title','description','project_pic','live_site'] 
+        fields=['title','description','project_pic','live_site'] 
 class ReviewForm(forms.ModelForm):
     class Meta:
         model= Review  
